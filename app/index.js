@@ -56,11 +56,17 @@ module.exports = class extends Generator {
 			return;
 		}
 
+		this.fs.copy(
+      		this.templatePath('Liberty'),
+      		this.destinationPath('.Liberty')
+    	);
+
 		this.fs.copyTpl(
 			this.templatePath("*"),
 			this.destinationPath("."),
 			projectConfig
 		);
+
 	}
 	method() {}
 };
