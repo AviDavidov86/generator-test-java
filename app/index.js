@@ -62,7 +62,7 @@ module.exports = class extends Generator {
     	);
 
 		this.fs.copyTpl(
-			this.templatePath("*"),
+			this.templatePath("Liberty/"),
 			this.destinationPath("Liberty/"),
 			projectConfig
 		);
